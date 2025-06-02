@@ -39,16 +39,16 @@ function Profile() {
   }
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-br from-slate-50 to-blue-50 py-6">
+    <div className="min-h-[55vh] bg-gradient-to-br from-blue-100 to-purple-100 py-6">
       <Container>
         <div className="max-w-6xl mx-auto px-2">
-          <div className="  border border-white/20 p-4 sm:p-6 lg:p-8">
+          <div className="  border border-white/20 p-4 sm:p-6 lg:p-8 ">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
               {/* Left Side - Profile Info */}
-              <div className="lg:w-1/3">
+              <div className="lg:w-1/3 mb-5 mt-6 lg:mt-8">
                 <div className="flex flex-col items-center lg:items-start">
-                  <div className="relative mb-6">
-                    <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
+                  <div className="relative mb-5">
+                    <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-blue-5 00 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
                       <FaUserCircle className="w-16 h-16 sm:w-20 sm:h-20 text-white" />
                     </div>
                     <div className="absolute -bottom-2 -right-2 w-6 h-6 sm:w-8 sm:h-8 bg-green-500 rounded-full border-2 sm:border-4 border-white shadow-md"></div>
@@ -61,10 +61,10 @@ function Profile() {
                         <span className="break-all text-sm sm:text-base">{userData.email}</span>
                       </div>
                     </div>
-                    {/* <div className="flex items-center justify-center lg:justify-start text-sm text-slate-500">
+                    <div className="flex items-center justify-center lg:justify-start text-sm text-slate-500">
                       <div className="w-2 h-2 bg-green-500 rounded-full mr-2 flex-shrink-0"></div>
                       <span>Active now</span>
-                    </div> */}
+                    </div>
                   </div>
                 </div>
               </div>
