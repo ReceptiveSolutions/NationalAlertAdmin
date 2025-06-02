@@ -21,21 +21,21 @@ function Footer() {
           <div className="flex justify-center space-x-6 text-sm font-medium">
             <Link 
               to="/" 
-              className="flex items-center text-gray-300 hover:text-white transition-colors"
+              className="flex items-center text-gray-300 hover:text-white "
             >
               <FaHome className="mr-2" />
               Home
             </Link>
             <Link 
               to="/all-posts" 
-              className="flex items-center text-gray-300 hover:text-white transition-colors"
+              className="flex items-center text-gray-300 hover:text-white "
             >
               <FaNewspaper className="mr-2" />
               News
             </Link>
             <Link 
               to="/add-post" 
-              className="flex items-center text-gray-300 hover:text-white transition-colors"
+              className="flex items-center text-gray-300 hover:text-white "
             >
               <FaPlus className="mr-2" />
               Add News
