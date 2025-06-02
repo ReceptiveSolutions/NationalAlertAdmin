@@ -61,10 +61,10 @@ function Profile() {
                         <span className="break-all text-sm sm:text-base">{userData.email}</span>
                       </div>
                     </div>
-                    <div className="flex items-center justify-center lg:justify-start text-sm text-slate-500">
+                    {/* <div className="flex items-center justify-center lg:justify-start text-sm text-slate-500">
                       <div className="w-2 h-2 bg-green-500 rounded-full mr-2 flex-shrink-0"></div>
                       <span>Active now</span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -79,7 +79,7 @@ function Profile() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                   <button
                     onClick={() => navigate('/all-posts')}
-                    className="group flex items-center p-4 sm:p-6 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-white"
+                    className="group flex items-center p-4 sm:p-6 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-white cursor-pointer"
                   >
                     <div className="bg-white/20 p-2 sm:p-3 rounded-lg mr-3 sm:mr-4 group-hover:bg-white/30 transition-all flex-shrink-0">
                       <FaNewspaper className="text-lg sm:text-xl" />
@@ -92,7 +92,7 @@ function Profile() {
                   
                   <button
                     onClick={() => navigate('/add-post')}
-                    className="group flex items-center p-4 sm:p-6 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-white"
+                    className="group flex items-center p-4 sm:p-6 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-white cursor-pointer"
                   >
                     <div className="bg-white/20 p-2 sm:p-3 rounded-lg mr-3 sm:mr-4 group-hover:bg-white/30 transition-all flex-shrink-0">
                       <FaPlus className="text-lg sm:text-xl" />
@@ -105,7 +105,7 @@ function Profile() {
                   
                   <button
                     onClick={() => navigate('/')}
-                    className="group flex items-center p-4 sm:p-6 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-white"
+                    className="group flex items-center p-4 sm:p-6 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-white cursor-pointer"
                   >
                     <div className="bg-white/20 p-2 sm:p-3 rounded-lg mr-3 sm:mr-4 group-hover:bg-white/30 transition-all flex-shrink-0">
                       <FaHome className="text-lg sm:text-xl" />
@@ -118,7 +118,7 @@ function Profile() {
                   
                   <button
                     onClick={logoutHandler}
-                    className="group flex items-center p-4 sm:p-6 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-white"
+                    className="group flex items-center p-4 sm:p-6 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-white cursor-pointer"
                   >
                     <div className="bg-white/20 p-2 sm:p-3 rounded-lg mr-3 sm:mr-4 group-hover:bg-white/30 transition-all flex-shrink-0">
                       <FaSignOutAlt className="text-lg sm:text-xl" />
