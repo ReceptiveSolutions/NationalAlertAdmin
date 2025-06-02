@@ -1,3 +1,101 @@
 body{
  background-color: rgb(241, 238, 235); 
 }
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+                    margin-top: 1.5rem;
+                    margin-bottom: 1rem;
+                    line-height: 1.3;
+                }
+                
+                .prose p {
+                    margin-bottom: 1rem;
+                    line-height: 1.6;
+                }
+                
+                .prose img {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 0.5rem;
+                    margin: 1rem auto;
+                    display: block;
+                }
+                
+                .prose ul, .prose ol {
+                    padding-left: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+                
+                .prose li {
+                    margin-bottom: 0.5rem;
+                }
+                
+                .prose blockquote {
+                    border-left: 4px solid #e5e7eb;
+                    padding-left: 1rem;
+                    margin: 1.5rem 0;
+                    font-style: italic;
+                    color: #6b7280;
+                }
+                
+                .prose code {
+                    background-color: #f3f4f6;
+                    padding: 0.125rem 0.25rem;
+                    border-radius: 0.25rem;
+                    font-size: 0.875em;
+                }
+                
+                .prose pre {
+                    background-color: #1f2937;
+                    color: #f9fafb;
+                    padding: 1rem;
+                    border-radius: 0.5rem;
+                    overflow-x: auto;
+                    margin: 1rem 0;
+                }
+                
+                .prose table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 1rem 0;
+                    overflow-x: auto;
+                    display: block;
+                    white-space: nowrap;
+                }
+                
+                .prose th, .prose td {
+                    border: 1px solid #d1d5db;
+                    padding: 0.5rem;
+                    text-align: left;
+                }
+                
+                .prose th {
+                    background-color: #f9fafb;
+                    font-weight: 600;
+                }
+                
+                @media (max-width: 640px) {
+                    .prose {
+                        font-size: 14px;
+                    }
+                    
+                    .prose h1 { font-size: 1.5rem; }
+                    .prose h2 { font-size: 1.25rem; }
+                    .prose h3 { font-size: 1.125rem; }
+                    .prose h4 { font-size: 1rem; }
+                    
+                    .prose table {
+                        font-size: 0.875rem;
+                    }
+                }
+                
+                @media (min-width: 641px) and (max-width: 768px) {
+                    .prose {
+                        font-size: 15px;
+                    }
+                }
+                
+                @media (min-width: 769px) {
+                    .prose {
+                        font-size: 16px;
+                    }
+                }
