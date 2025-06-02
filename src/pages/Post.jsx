@@ -34,14 +34,16 @@ export default function Post() {
     return post ? (
         <Container className="py-8">
             <div className="w-full max-w-3xl mx-auto">
-                {/* Featured Image */}
+                {/* Featured Image with Fixed Aspect Ratio */}
                 {post.featuredimage && (
                     <div className="mb-6 rounded-lg overflow-hidden">
-                        <img
-                            src={appwriteService.getFilePreview(post.featuredimage)}
-                            alt={post.title}
-                            className="w-full h-auto object-cover"
-                        />
+                        <div className="w-full aspect-[16/9]">
+                            <img
+                                src={appwriteService.getFilePreview(post.featuredimage)}
+                                alt={post.title}
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
                     </div>
                 )}
 
